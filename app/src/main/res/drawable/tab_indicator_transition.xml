@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#721c1c" /> <!-- Неактивная точка -->
+            <size
+                android:width="24dp"
+                android:height="24dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4A0E0E" /> <!-- Активная точка -->
+            <size
+                android:width="36dp"
+                android:height="36dp" />
+        </shape>
+    </item>
+</transition>

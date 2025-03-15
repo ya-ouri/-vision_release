@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<!-- Верхняя часть с красным фоном и картинкой -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#721c1c"
+    android:gravity="center">
+
+<ImageView
+    android:id="@+id/visionImage"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:scaleType="centerCrop"
+    android:contentDescription="Vision Image" />
+</LinearLayout>
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#f9ffe3"
+android:orientation="vertical"
+android:padding="16dp">
+
+<TextView
+    android:id="@+id/visionTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ахроматопсия"
+    android:textColor="#721c1c"
+    android:textSize="20sp"
+    android:fontFamily="@font/sf_semibold"
+    android:layout_marginBottom="8dp" />
+
+<TextView
+    android:id="@+id/visionDescription"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Полное отсутствие цветового зрения..."
+    android:textColor="#721c1c"
+    android:textSize="16sp" />
+</LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>

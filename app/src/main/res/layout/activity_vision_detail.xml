@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#721c1c">
+
+    <LinearLayout
+        android:id="@+id/imageSection"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_240sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Detail Image"
+            android:src="@drawable/protanopia" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/textCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:topLeftRadius="50dp"
+        android:topRightRadius="50dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageSection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_top_background"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_60sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Протанопия"
+                android:textColor="#721c1c"
+                android:textSize="@dimen/_30ssp"
+                android:fontFamily="@font/sf_semibold"
+                android:layout_marginBottom="16dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/detailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Протанопия — это форма дальтонизма, при которой отсутствует восприятие красного цвета из-за дефекта или отсутствия L-конусов. Люди с протанопией часто путают красный с зеленым или серым, а также имеют трудности с различением оттенков оранжевого и желтого. Это состояние может быть наследственным и встречается примерно у 1% населения."
+                    android:textColor="#721c1c"
+                    android:textSize="@dimen/_18ssp"
+                    android:lineSpacingExtra="8dp" />
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/arrow"
+        android:scaleType="fitCenter"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:contentDescription="Back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

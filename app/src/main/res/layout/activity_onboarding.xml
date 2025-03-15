@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9ffe3">
+
+    <!-- ViewPager2 для слайдов -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabLayout" />
+
+    <!-- Точки-индикаторы -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/buttonContainer"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabMaxWidth="@dimen/_100sdp"
+        app:tabPaddingStart="12dp"
+        app:tabPaddingEnd="12dp" />
+
+    <!-- Контейнер для кнопки -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/_20sdp">
+
+        <Button
+            android:id="@+id/actionButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#721c1c"
+            android:padding="@dimen/_16sdp"
+            android:text="Пропустить"
+            android:textColor="#f9ffe3"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>
