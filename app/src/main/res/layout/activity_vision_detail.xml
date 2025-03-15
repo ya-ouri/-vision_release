@@ -21,7 +21,7 @@
             android:layout_height="@dimen/_200sdp"
             android:scaleType="centerCrop"
             android:contentDescription="Detail Image"
-            android:src="@drawable/protanopia" />
+            android:src="@drawable/protanopia_two" />
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
